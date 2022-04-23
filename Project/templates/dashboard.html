@@ -1,0 +1,62 @@
+<main>
+<div class="container">
+<br><br><br><br><br><br>
+
+<h2 class="dashboard_h2">Welcome back, <b>Admin</b></h2>
+
+<div  class="feedbacks">
+    <p class="title">Feedbacks</p>
+    <table id="feedback">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>Date posted</th>
+        <<<<feedback>>>>
+    </table>
+<br><br><br><br><br><br>
+</div>
+<div  class="purchases">
+    <p class="title">Purchases</p>
+    <table id="purchases">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Car</th>
+        <th>Date</th>
+        <<<<purchases>>>>
+    </table>
+</div>
+
+<div class="add_new_car">
+  
+    <p class="title"> Add new car</p>
+    <div class="contactform">
+        <form action="add_car.php" class="add_car_form" method="post" enctype="multipart/form-data" class="add_cars">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="car_type" placeholder="Type" required>
+            <input type="text" name="price" placeholder="Price" required>
+            <input type="text" name="buildyear" placeholder="Build Year">
+            <input type="text" name="firstregistration" placeholder="First Registration">
+            <input type="text" name="odometerreading" placeholder="Odometer Reading">
+            <input type="text" name="cylindercapacity" placeholder="Cylinder Capacity">
+            <input type="text" name="transmission" placeholder="Transmission">
+            <input type="text" name="fueltype" placeholder="Tuel Type">
+            <input type="text" name="doors" placeholder="Doors">
+            <input type="text" name="drivetrain" placeholder="Drivetrain">
+            <input type="text" name="horsepower" placeholder="Horsepower">
+            <input type="file" accept="image/*" id="file-upload" name="picture_location" placeholder="Picture Location" required>
+            <label for="file-upload">Choose a file...</label>
+            <span>
+                <strong>Chosen file:</strong>
+                <span id="file-name">None</span>
+            </span>
+            <script src="../js/file-upload.js"></script>
+            <input type="submit" name="submit" class="add" id="submit" value="ADD CAR">
+
+        </form>
+    </div>
+    
+</div>
+</div>
+</main>
